@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Aston Martin Home</title>
+    <meta name="description" content="A Catalog of Shows Set in Los Angeles">
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="scripts.js"></script>
+</head>
+
+<body>
+    <header class="main-header">
+        <h1 class="title">Aston Martin</h1>
+        <select id="model-dropdown" onchange="displaySelectedModel(this.value)">
+            <option value="">Select a model...</option>
+            <option value="all">All</option>
+            <option value="DB12">DB12</option>
+            <option value="Vanquish">Vanquish</option>
+            <option value="Vantage">Vantage</option>
+            <option value="DBX">DBX</option>
+        </select>
+        <label for="sort-criteria">Sort by:</label>
+        <select id="sort-criteria" onchange="displaySelectedModel(document.getElementById('model-dropdown').value)">
+            <option value="price">Price (MSRP)</option>
+            <option value="horsepower">Horsepower</option>
+        </select>
+    </header>
+    <div id="card-container">
+        
+    </div>
+    <div class="card" style="display: none;">
+        <div class="card-content">
+            <h2>Car Model</h2>
+            <img src="" alt="Car Poster">
+            <ul>
+                <li>MSRP: $245,000</li>
+                <li>Horsepower: 671</li>
+                <li>Engine: 4.0L V8</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
